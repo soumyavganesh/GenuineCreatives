@@ -42,12 +42,15 @@
                 <a class="gn-icon gn-icon-search"><span>Search</span></a>
               </li>
               <li>
-                <a href="#about" class="gn-icon gn-icon-download">About</a>
+                <a href="#about" class="gn-icon gn-icon-help">About</a>
               </li>
               <li><a href="#service" class="gn-icon gn-icon-cog">Service</a></li>
-              <li><a href="#works" class="gn-icon gn-icon-help">Works</a></li>
+              <li><a href="#works" class="gn-icon gn-icon-pictures">Works</a></li>
               <li>
                 <a href="#contact" class="gn-icon gn-icon-archive">Contact</a>
+              </li>
+              <li>
+                <a href="#login" class="gn-icon gn-icon-article">Register or Login</a>
               </li>
             </ul>
           </div>
@@ -363,6 +366,87 @@
     </div>
   </section>
   <!-- /Section: contact -->
+
+  <!-- Section: login -->
+  <section id="login" class="home-section text-center">
+    <div class="heading-contact marginbot-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-2">
+
+            <div class="section-heading">
+              <h2>Login</h2>
+              <p>Step into your space!</p>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+
+            <div class="section-heading">
+              <h2>Register</h2>
+              <p>New user? Sign up and explore!</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-4 col-md-offset-2">
+          <div class="boxed-grey">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="subject" id="subject" placeholder="Password" data-rule="minlen:4" data-msg="Password" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group" style="visibility: hidden;">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Password" data-rule="minlen:4" data-msg="Password" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button class="btn btn-skin"><a href="dashboard\main.html" style="color: white;">Log In</a></button></div>
+            </form>
+          </div>
+
+          </div>
+
+          <div class="col-lg-4">
+          <div class="boxed-grey">
+            <div id="registermessage" style="display: none;">Thank you for registering with us. Please verify your email by clicking on the link sent to you. Have a nice time at Genuine Creatives!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="subject" id="subject" placeholder="Password" data-rule="minlen:4" data-msg="Password" />
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button class="btn btn-skin" onclick="javascript: $('#registermessage').show();">Register</button></div>
+            </form>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      
+
+      </div>
+
+    </div>
+  </section>
+  <!-- /Section: login -->
 
   <footer>
     <div class="container">
